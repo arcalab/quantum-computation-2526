@@ -1,0 +1,664 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Quantum Computation  2024/25</title>		
+
+	<meta name="description" content="Quantum Computing 23/24">
+	<meta name="keywords" content="Quantum computing, semantics, logic">
+	<meta name="author" content="Luís Soares Barbosa" >
+	
+<!-- 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /> -->
+  <link href="extra/css/bootstrap-bw.min.css" rel="stylesheet" media="screen">
+  <link href="extra/css/main.css" rel="stylesheet">
+
+  <!-- see more examples in http://bootswatch.com/paper/# -->
+</head>
+
+<body>
+
+
+<div class="navbar navbar-default navbar-fixed-top"> <!-- navbar-fixed-top -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="index.html">
+<!--     AC -->
+    </a>
+  </div>
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav" id="myTab">
+      <li class="active"><a href="#">Home</a></li>
+  		<li><a href="#programa">Syllabus</a></li>
+	  	<li><a href="#material">Summaries</a></li>
+      <li><a href="#biblio">Bibliography</a></li>
+      <li><a href="#notas">News</a></li>
+	  	<li><a href="#funcionamento">Pragmatics</a></li>
+    </ul>
+  </div>
+</div>
+
+
+ 
+<div class="splash">
+	<h2 class="splash-title">Quantum Computation 2024-25</h2>
+<!-- 	<div class="blue-rect"> 
+-->
+	<h4 class="splash-subtitle">MEF - MSc in Physics Engineering </h4>
+  <h4 class="splash-subtitle"> Dep. Informática, Universidade do Minho</h4>
+  </div>
+
+
+<div id="myTabContent" class="container">
+<div class="bs-component">
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~
+
+
+-->
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>Learning Outcomes</h2>
+
+<p>
+On successful completion  of the course students should be able
+
+<p>
+
+<ul>
+  <li> 
+ To understand basic concepts of computability and computational complexity.
+  <li> 
+ To master the quantum computational model.
+ <li>
+  To  design and analyse quantum algorithms.
+  <li>
+  To implement and run quantum algorithms in the Qiskit software development kit.
+</ul>
+</p>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~-->
+<div id="programa"></div>
+<h2>Syllabus</h2>
+
+<ul>
+<li> <strong> Computability and  complexity </strong>
+<ul>
+  <li> Mathematical backgound: sets, orders, groups. 
+  <li> Turing machines and computability. 
+  <li> Computational complexity. Algorithms and complexity classes. 
+</ul> 
+<li> <strong> Quantum computation and algorithms</strong>
+<ul>
+  <li> The quantum computational model (gates, measurements, and circuits).
+  <li> Introduction to quantum algorithms.
+  <li> Algorithms based on phase amplification.
+  <li> Algorithms based on the quantum Fourier transform.
+  <li> Case studies in quantum algorithmics.
+</ul> 
+<li>
+    <strong> Quantum  programming</strong>
+    <ul>
+        <li> Quantum programming in Qiskit and other tools
+    </ul>
+</ul>
+
+
+
+    <!--~~~~~~~~~~~~~~~~~~~~~~~-->
+    <div id="material"></div>
+    <h2>Summaries (2024-25)</h2>
+
+    <h5> T Lectures</h5>
+
+  <table style="width:100%">
+        <tr>
+          <td><strong>Sep 11 (09:00 - 11:00)</strong></td>
+          <td>Introduction to Quantum Computation and the course dynamics
+            <a href="./NotesSlides/CQ-0.pdf">(slides)</a>
+            <P> Mathematical background for the study of computability and computational complexity
+            <a href="./NotesSlides/QC-LN-BackgroundToComputability.pdf">(notes)</a>.</td>
+        </tr>
+        <tr>
+          <td><strong>Sep 16 (11:00 - 13:00)</strong></td>
+          <td>Introduction to quantum algorithms. The Deutsch problem
+            <a href="./NotesSlides/CQ2425-1.pdf">(slides)</a>.
+            </td>
+        </tr>
+        <tr>
+          <td><strong>Sep 25 (09:00 - 11:00)</strong></td>
+          <td>Quantum algorithms: the pahse kick-back pattern <a href="./NotesSlides/CQ2425-2.pdf">(slides)</a>. Bernstein-Varizani algorithm. Deutsch-Joza algorithm.
+            (Informal) introduction to Grover's algorithm.
+        </td>
+        </tr>
+        <tr>
+          <td><strong>Oct 9 (09:00 - 11:00)</strong></td>
+          <td> No class due to adverse weather conditions (to be replaced)</a>.
+        </td>
+        </tr>
+        <tr>
+          <td><strong>Oct 16 (09:00 - 11:00)</strong></td>
+          <td>Unstructured search problems and Grover's algorithm  <a href="./NotesSlides/CQ2425-3.pdf"> (slides)</a>.
+        </td>
+        </tr>
+        <tr>
+          <td><strong>Oct 21 (16:00 - 18:00)</strong></td>
+          <td>Grover's algorithm for multiple solutions. Amplitude amplification as a basic programming technique <a href="./NotesSlides/CQ2425-4.pdf">(slides)</a>. <P> Background for the next lecture: groups <a href="./NotesSlides/QC-LN-Groups.pdf">(notes)</a>.
+        </td>
+        </tr>
+        <tr>
+          <td><strong>Oct 30 (09:00 - 11:00)</strong></td>
+          <td>Simon's algorithm  <a href="./NotesSlides/CQ2425-5.pdf">(slides)</a>. (Informal) introduction to its generalization. 
+        </td>
+        </tr>
+        <tr>
+          <td><strong>Nov 13 (09:00 - 11:00)</strong></td>
+          <td>Quantum phase estimation  <a href="./NotesSlides/CQ2425-6.pdf">(slides)</a>. Introduction to the quantum Fourier transform. 
+        </td>
+        </tr>
+        <tr>
+          <td><strong>Nov 18 (16:00 - 18:00)</strong></td>
+          <td>Revisiting the quantum Fourier transform as a main algorithmic component <a href="./NotesSlides/CQ2425-7.pdf">(slides)</a>. Application to eigenvalue estimation <a href="./NotesSlides/CQ2425-8.pdf">(slides)</a>. 
+        </td>
+        </tr>
+                <tr>
+          <td><strong>Nov 20 (09:00 - 11:00)</strong></td>
+          <td>Shor's algoritm <a href="./NotesSlides/CQ2425-9.pdf">(slides)</a>. 
+        </td>
+        </tr>
+        <!--
+        <tr>
+          <td><strong>Sep 27 (09:00 - 11:00)</strong></td>
+          <td>Computability. The halting problem. Turing machines.
+            <a href="./NotesSlides/QC-LN-Computability.pdf">(notes)</a>.
+            <P> Recommended additional reading: 
+                <a href="https://en.wikipedia.org/wiki/David_Deutsch">David Deutsch</a> 1985
+                paper <em>"Quantum theory, the Church-Turing principle and the universal
+quantum computer"</em> (<a href="https://www.cs.princeton.edu/courses/archive/fall04/cos576/papers/deutsch85.pdf">link</a>).
+            </td>
+        </tr>
+       <tr>
+          <td><strong>Sep 29 (11:00 - 13:00)</strong></td>
+          <td>Introduction to quantum algorithms. Deutsch algorithm: A simple algorithm with exponential quantum advantage.
+            <a href="./NotesSlides/CQ2324-1.pdf">(slides)</a>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Oct 6 (11:00 - 13:00)</strong></td>
+          <td> Computational Complexity. The asymptotic notation. 
+            Case study: closure operations.
+            (<a href="LectureNotesTP/04 - Complexity/QC-LN-Complexity.pdf"
+            target="_blank" rel="noopener noreferrer">Lecture notes 3</a>)
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Oct 13 (11:00 - 13:00)</strong></td>
+          <td>Quantum complexity (<a href="LectureNotesTP/04 - Complexity/QC-LN-Complexity.pdf"
+            target="_blank" rel="noopener noreferrer">Lecture notes 3</a>).
+            Debate on the "Quantum theory, the Church-Turing principle and the universal quantum computer" paper</td>
+        </tr>
+        <tr>
+          <td><strong>Oct 20 (11:00 - 13:00)</strong></td>
+          <td>Quantum algorithms: the pahse kick-back pattern. Bernstein-Varizani algorithm. Deutsch-Joza algorithm.
+            <a href="./NotesSlides/CQ2324-2.pdf">(slides)</a>
+        </td>
+        </tr>
+        <tr>
+          <td><strong>Oct 27 (11:00 - 13:00)</strong></td>
+          <td>Quantum algorithms: unstructured search and Grover's algorithm.
+            <a href="./NotesSlides/CQ2324-3.pdf">(slides)</a>
+        </td>
+        </tr>
+        <tr>
+          <td><strong>Nov 3 (11:00 - 13:00)</strong></td>
+          <td>Generalizing Grover's algorithm. The amplitude amplification technique.
+            <a href="./NotesSlides/CQ2324-4.pdf">(slides)</a>
+        </td>
+        <tr>
+          <td><strong>Nov 10 (11:00 - 13:00)</strong></td>
+          <td>Simon's algorithm and its generalizations. Introduction to the hidden subgroup problem.
+            <a href="./NotesSlides/CQ2324-5.pdf">(slides)</a>
+            <a href="./NotesSlides/QC-LN-Groups.pdf">(complementary notes on groups)</a>
+        </td>
+         <tr>
+        <td><strong>Nov 17 (11:00 - 13:00)</strong></td>
+          <td>An algorithm for quantum phase estimation. The quantum Fourier transform.
+            <a href="./NotesSlides/CQ2324-6.pdf">(slides)</a>
+            <a href="./NotesSlides/CQ-QFT-Problems.pdf">(solutions to the exercises)</a>
+        </td>
+        </tr>
+         <tr>
+        <td><strong>Nov 24 (11:00 - 13:00)</strong></td>
+          <td>Case study: quantum protocols for secure multi-party computation.
+            <a href="./NotesSlides/24-11-2023_smc_lecture.pdf">(slides)</a>
+            <a href="./NotesSlides/QuSMC-lecture.ipynb">(Jupyter Notebook)</a>
+        </td>
+        </tr>
+         <tr>
+        <td><strong>Jan 3 (09:00 - 11:00)</strong></td>
+          <td>The quantum Fourier transform <a href="./NotesSlides/CQ2324-7.pdf">(slides)</a>. 
+            Application to eignevalue estimation <a href="./NotesSlides/CQ2324-8.pdf">(slides)</a>.
+        </td>
+        </tr>
+         <tr>
+        <td><strong>Jan 5 (11:00 - 13:00)</strong></td>
+          <td>An algorithm for order-finding and its role in Shor's algorithm <a href="./NotesSlides/CQ2324-9.pdf">(slides)</a>. Quantum walks <a href="./NotesSlides/QuantumWalks.zip">(Jupyter Notebook)</a>.
+        </td>
+        </tr>
+      
+
+      --> 
+    </table>
+   
+    <h5> TP Lectures </h5>
+  <table style="width:100%">
+
+    <tr>
+      <td><strong>Sep 30 (16:00 - 18:00)</strong></td>
+      <td>Quantum computing introduction with pennylane (<a href="TP2425/TP1-intro/Archive.zip"
+          target="_blank" rel="noopener noreferrer">Notebook</a>)</td>
+    </tr>
+    <tr>
+      <td><strong>Oct 7 (11:00 - 13:00)</strong></td>
+      <td> Multiqubit operations and entanglement (<a href="TP2425/TP2-multiqubit-and-measurements/lecture-2-multiqubit-gates-and-measurements.ipynb"
+          target="_blank" rel="noopener noreferrer">Notebook</a>)</td>
+    </tr>
+    <tr>
+      <td><strong>Oct 7 (16:00 - 18:00)</strong></td>
+      <td> Pauli rotations and expectation value of observables (Continuing Notebook 2)</td>
+    </tr>
+    <tr>
+      <td><strong>Oct 14 (16:00 - 18:00)</strong></td>
+      <td> Deutsch-Jozsa algoritm (<a href="TP2425/TP3-Deutsch-Jozsa/Archive.zip"
+        target="_blank" rel="noopener noreferrer">Notebook</a>)</td>
+    </tr>
+    <tr>
+      <td><strong>Nov 4 (16:00 - 18:00)</strong></td>
+      <td> Deutsch-Jozsa algoritm (Cont) </td>
+    </tr>
+    <tr>
+      <td><strong>Nov 6 (09:00 - 11:00)</strong></td>
+      <td> Grover's algoritm (<a href="TP2425/TP5-Grover/Archive.zip"
+        target="_blank" rel="noopener noreferrer">Notebook</a>)</td>
+    </tr>
+    <tr>
+      <td><strong>Nov 11 (16:00 - 18:00)</strong></td>
+      <td> Grover's algoritm review and multiple number of solutions </td>
+    </tr>
+    <tr>
+      <td><strong>Nov 25 (16:00 - 18:00)</strong></td>
+      <td> Generalized amplitude amplification and unknown number of solutions (<a href="TP2425/TP6-AA-multiple-unknown-winners/Archive.zip"
+        target="_blank" rel="noopener noreferrer">Notebook</a>)</td>
+    </tr>
+    <tr>
+      <td><strong>Dec 2 (16:00 - 18:00)</strong></td>
+      <td> QFT (<a href="TP2425/TP7-QFT/lecture-6-qft.ipynb"
+        target="_blank" rel="noopener noreferrer">Notebook</a>)</td>
+    </tr>
+    </table>
+    <!--
+    <table style="width:100%">
+        <tr>
+          <td><strong>Sep 13 (09:00 - 11:00)</strong></td>
+          <td>Algebra of quantum operations (<a href="LectureNotesTP\01 - Algebra of quantum operations\class01.pdf"
+              target="_blank" rel="noopener noreferrer">Exercises 1</a>)</td>
+        </tr>
+        <tr>
+          <td><strong>Sep 20 (09:00 - 11:00)</strong></td>
+          <td>Introduction to Qiskit; Quantum Operations and Simulations 
+            (<a href="LectureNotesTP/02 - Qiskit Intro/class02.ipynb"
+            target="_blank" rel="noopener noreferrer">Jupyter Notebook 1</a>)</td>
+        </tr>
+        <tr>
+          <td><strong>Oct 4 (09:00 - 11:00)</strong></td>
+          <td>Computability. The halting problem. Turing machines. (Exercises - Lecture notes 2)</td>
+        </tr>
+        <tr>
+          <td><strong>Oct 11 (09:00 - 11:00)</strong></td>
+          <td>Complexity classes. (Lecture note 3)</td>
+        </tr>
+        <tr>
+          <td><strong>Oct 18 (09:00 - 11:00)</strong></td>
+          <td>The Deutsch-Jozsa Algorithm; Simulate Real Devices
+            (<a href="LectureNotesTP/05 - Deutsch-Jozsa/class05.ipynb"
+            target="_blank" ref="noopener noreferrer">Jupyter Notebook 2</a>)
+          </td>
+        </tr> 
+        <tr>
+          <td><strong>Oct 25 (09:00 - 11:00)</strong></td>
+          <td>Bernstein-Vazirani Algorithm; Simon's Algorithm; Noise Models
+            (<a href="LectureNotesTP/06 - Bernstein-Vazirani/class06.ipynb"
+            target="_blank" ref="noopener noreferrer">Jupyter Notebook 3</a>)
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Nov 8 (09:00 - 11:00)</strong></td>
+          <td>Grover's Algorithm (<a href="LectureNotesTP/07 - Grover/class07.zip"
+            target="_blank" ref="noopener noreferrer">Jupyter Notebook 4</a>)
+          </td>
+        </tr>      
+        <tr>
+          <td><strong>Nov 15 (09:00 - 11:00)</strong></td>
+          <td>Quantum Counting and Quantum Fourier Transform (QFT)
+            (<a href="LectureNotesTP/08 - Quantum Counting/class08.ipynb"
+            target="_blank" ref="noopener noreferrer">Jupyter Notebook 5</a>)
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Nov 22 (09:00 - 11:00)</strong></td>
+          <td>Quantum Counting (part 2) and Quantum Phase Estimation (QPE)
+            (<a href="LectureNotesTP/09 - Quantum Couting (part 2)/class09.ipynb"
+            target="_blank" ref="noopener noreferrer">Jupyter Notebook 6</a>)
+          </td>
+        </tr> 
+        <tr>
+          <td><strong>Nov 29 (09:00 -11:00)</strong></td>
+          <td>Quantum Period Finding (QPF)
+            (<a href="LectureNotesTP/10 - QPF/class10.ipynb"
+            target="_blank" ref="noopener noreferrer">Jupyter Notebook 7</a>)
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Dez 6 (09:00 - 11:00)</strong></td>
+          <td>Shor's Algorithm
+            (<a href="LectureNotesTP/11 - Shor/class11.ipynb"
+            target="_blank" ref="noopener noreferrer">Jupyter Notebook 8</a>)
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Dez 13 (09:00 - 11:00)</strong></td>
+          <td>Repetition Codes
+            (<a href="LectureNotesTP/12 - Repetition codes/class12.ipynb"
+            target="_blank" ref="noopener noreferrer"> Jupyter Notebook 9</a>)
+          </td>
+        </tr>
+    </table>
+-->
+    <!--~~~~~~~~~~~~~~~~~~~~~~~-->
+    <div id="biblio"></div>
+    <h2>Bibliography</h2>
+
+
+    <h5> Computability and Computational Complexity </h5>
+    <ul>
+
+        <li>
+            H. R. Lewis and C. H. Papadimitriou. <strong> Elements of the Theory of Computation</strong>. Prentice
+            Hall (2nd Ed), 1997.
+        <li>
+            S. Arora and B. Barak. <strong>Computational Complexity: A Modern Approach</strong>. Cambridge
+            University Press, 2009.
+        </li>
+        <li>
+            C. Moore and S. Mertens<strong> The nature of computation</strong>. Oxford
+            University Press, 2011.
+        </li>
+    </ul>
+
+
+
+    <h5> Quantum Computation and Algorithms </h5>
+    <ul>
+
+        <li>
+            M. A. Nielsen and I. L. Chuang. <strong>Quantum Computation and Quantum Information</strong> (10th
+            Anniversary Edition). Cambridge University Press, 2010
+        <li>
+            E. Rieffel and W. Polak. <strong>Quantum Computing: A Gentle Introduction</strong>. MIT Press, 2011.
+        <li>
+            F. Kaye, R. Laflamme and M. Mosca. <strong>An Introduction to Quantum Computing</strong>. Oxford University Press, 2007.
+        <li>
+            N. S. Yanofsky and M. A. Mannucci. <strong>Quantum Computing for Computer Scientists</strong>. Cambridge
+            University Press, 2008.
+        <li>
+            W. Scherer. <strong>Mathematics of Quantum Computing</strong>. Springer, 2019.
+    </ul>
+<!--
+<h5> Some extra references on quantum algorithms
+  </font><font color="red">    <strong>NEW</strong></font></h5>
+
+<ul>
+
+
+<li> <font color="red">Algorithms:</font> <a href="https://arxiv.org/abs/1804.03719">Quantum algorithms implementations for beginners</a> a recent, systematic survey paper, a bit terse, but with implementation schemes in <a href="https://qiskit.org/">Qiskit</a>. Peter Shor <a href="https://cs.brynmawr.edu/Courses/cs380/fall2012/Shor2003.pdf">paper</a> on the scarcity of quantum algorithms.
+
+ <li> <font color="red">Search:</font> An interesting review on <a href="https://arxiv.org/abs/1602.02730">quantum search</a> algorithms. 
+
+  <li> <font color="red">NISQ and Variational Methods:</font><a href="https://arxiv.org/abs/1801.00862">John Preskill 2017</a> paper on current NISQ technology --- very important reading to complement the stuff covered in the lectures. On variational methods read <a href="https://arxiv.org/abs/2012.09265">this</a> and <a href="https://arxiv.org/abs/1509.04279">that</a>.
+
+<li> <font color="red">Recent papers on specific algorithms:</font>  <a href="https://epubs.siam.org/doi/pdf/10.1137/050643684?casa_token=5EeEItTlxRwAAAAA:3ovDyb85Aus3CWbPSv88aei-llagQt24awjSA2KNeGnkC5lSjOlYM4-HwpxnT3HbxIz5iZKqNg">the triangle problems</a>; <a href="https://arxiv.org/abs/1704.06774">tree size estimation</a>; 
+  <a href="https://arxiv.org/abs/1806.06893">risk analysis</a>;
+  <a href="https://arxiv.org/abs/1201.4780">quantum walks</a> and their 
+  <a href="https://arxiv.org/abs/0706.0304">implementation</a>.
+
+<li> <font color="red">Quantum programming languages:</font> <a href="https://www.mathstat.dal.ca/~selinger/papers/papers/qpl.pdf">here</a>; <a href="http://www.cs.nott.ac.uk/~psztxa/publ/qml.pdf">there</a>, and <a href="https://www.iitis.pl/~miszczak/files/papers/miszczak11models.pdf">there</a>.
+</ul>
+-->
+
+
+
+
+    <h5> Bedtime readings </h5>
+    <ul>
+
+        <li>
+            N. S. Yanofsky. <strong>The Outer Limits of Reason</strong>. MIT Press, 2013.
+        <li>
+            S. Aaronson. <strong>Quantum Computing since Democritus</strong>. Cambridge
+            University Press, 2013.
+        </li>
+	<li>
+	    J. Preskill <strong>Quantum Computing in the NISQ era and beyond</strong>. Quantum 2, 79, 2018.
+	</li>  
+    </ul>
+
+
+    <h5> Links </h5>
+    <ul>
+        <li><a href="https://complexityzoo.net/Complexity_Zoo">The complexity zoo</a></li>
+        <li><a href="http://quantumalgorithmzoo.org/">Quantum Algorithms zoo</a></li>
+        <li><a href="https://quantum-computing.ibm.com/composer">IBM Quantum Experience</a></li>
+        <li><a href="https://inl.int/research-groups/quantum-and-linear-optical-computation/">Quantum and Linear Optical Computation Group at INL</a></li>
+        <li><a href="http://lmf.di.uminho.pt/">Logic and Formal Methods Group</a></li>
+    </ul>
+
+    <!--
+    <div id="notas"></div>
+    <h2>News</h2>
+
+    <h5><a name="May24"></a> <strong>May 26:</strong> <font color="red"> Some references on quantum algorithms
+      </font><font color="red">    <strong>NEW</strong></font></h5>
+
+    <ul>
+    <li> <a href="https://arxiv.org/abs/1708.03684">Introductory text</a>  on quantum computation.
+
+    <li> <a href="https://arxiv.org/abs/1804.03719">Quantum algorithms implementations for beginners</a> a recent, systematic survey paper, a bit terse, but with implementation schemes in <a href="https://qiskit.org/">Qiskit</a>. Here <a href="https://arxiv.org/abs/1511.04206">another one</a>, and <a href="https://www.researchgate.net/publication/331097538_Quantum_Algorithm_Design_Techniques_and_Applications/link/5c6aebca4585156b570698b8/download">another still</a>.
+
+     <li> An interesting review on <a href="https://arxiv.org/abs/1602.02730">quantum search</a> algorithms. Peter Shor <a href="https://cs.brynmawr.edu/Courses/cs380/fall2012/Shor2003.pdf">paper</a> on the scarcity of quantum algorithms.
+
+      <li> <a href="https://arxiv.org/abs/1801.00862">John Preskill 2017</a> paper on current NISQ technology --- very important reading to complement the stuff covered in the lectures.
+
+    <li> Some recent papers on specific algorithms:  <a href="https://epubs.siam.org/doi/pdf/10.1137/050643684?casa_token=5EeEItTlxRwAAAAA:3ovDyb85Aus3CWbPSv88aei-llagQt24awjSA2KNeGnkC5lSjOlYM4-HwpxnT3HbxIz5iZKqNg">the triangle problme</a>; <a href="https://arxiv.org/abs/1704.06774">tree size estimation</a>;
+      <a href="https://arxiv.org/abs/1806.06893">risk analysis</a>;
+      <a href="https://arxiv.org/abs/1201.4780">quantum walks</a> and their
+      <a href="https://arxiv.org/abs/0706.0304">implementation</a>.
+
+    <li> And, finally, some papers on quantum programming languages: <a href="https://www.mathstat.dal.ca/~selinger/papers/papers/qpl.pdf">here</a>; <a href="http://www.cs.nott.ac.uk/~psztxa/publ/qml.pdf">there</a>, and <a href="https://www.iitis.pl/~miszczak/files/papers/miszczak11models.pdf">there</a>.
+    </ul>
+
+
+    <h5><a name="May7"></a> <strong>May 7:</strong> <font color="red"> References for measurement-based quantum computation</font></h5>
+
+    <ul>
+    <li> MBQC - The model: This <a href="https://arxiv.org/abs/quant-ph/0508124">survey</a>  is an excellent review of the area by Josza, to complement these short, self-contained <a href="MQCnotes_Jozsa.pdf">lecture notes</a>, also by Jozsa, which provide the best overview of the model for novices. Part of Ernesto's lecture was based on section 2.1 of this <a href="https://arxiv.org/abs/1309.5675">paper</a>  by McKague.
+    <li> The gate teleportation idea by Gottesman and Chuang appear in this 1999 <a href="https://arxiv.org/abs/quant-ph/9908010">paper</a>.
+    <li> Look at this <a href="https://arxiv.org/abs/0706.3401">paper</a>  by Gross at al for other known universal resources for MBQC.
+    <li> References for experimental implementations can be found <a href="https://arxiv.org/abs/1202.5459">here</a>, <a href="https://arxiv.org/abs/1101.2076">here</a>, and <a href="https://arxiv.org/abs/0709.1729">there</a>.
+    <li> Due to the neat separation between classical and quantum resources, the power of MBQC must come from the correlations exhibited by measurements of the cluster. The connection with non-locality and contextuality has been studied in a few papers, for example
+    <a href="https://arxiv.org/abs/1009.5213">this one</a>, on the relation with non-locality tests, and <a href="https://arxiv.org/abs/0907.5449">that</a> one relating MBQC with quantum contextuality.
+    <li> Ernesto's  <a href="https://arxiv.org/abs/1706.09757">paper</a> shows that arbitrarily small violations of non-contextuality inequalities are sufficient for reliable evaluation of general Boolean functions. On the other hand, the <a href="https://arxiv.org/abs/1401.4174">paper</a> by Howard et al. shows that contextuality is necessary for computation in the model of magic state distillation and injection.
+    </li></ul>
+
+    <h5><a name="Mar16"></a> <strong>Mar 16:</strong> <font color="red">Going virtual (from 16th March ...)</font> </h5>
+
+    <ul>
+    <li>
+    Para cada aula será disponibilizado antecipadamente nesta página o <strong>material de suporte</strong> necessário que deverá ser estudado individualmente por cada um.
+    </li>
+    <li>
+    No horário previsto para cada aula haverá uma <strong>sessão “live”</strong> que permitirá alguma sincronização à distância onde tentarei apresentar um sumário da matéria e responder às vossas questões. A duração da sessão será ajustada às necessidades de interacção, não excedendo o tempo regulamentar. Utilizaremos para isso a plataforma <strong>Blackboard Collaborate Ultra</strong> disponibilizada pela Universidade. O link para cada sessão estará anunciado nesta página.
+    </li>
+    <li>
+    Para colmatar as dificuldades de comunicação síncrona (nomeadamente a ausência de um quadro onde escrever), estarei disponível para esclarecer qualquer dúvida de forma assíncrona.
+    </li>
+    <li>
+    No que concerne à <strong>avaliação</strong> resolvemos aumentar o peso da componente prática, que passa a valer 70% da classificação final. Esta consistirá no trabalho prático, como combinado, complementado por exercícios para resolução em casa que serão propostos nas aulas TP. Pensamos que este tipo de avaliação, reforçando o caracter prático da UC, se adequa melhor a este momento em que não dispomos de aulas presenciais. O teste individual (que agora terá 30% de peso) será realizado assincronamente através de um conjunto de 4 problmemas propostos nas aulas teóricas.
+    </li>
+    </ul>
+    
+   -->
+    <div id="funcionamento"></div>
+    <h2>Pragmatics</h2>
+
+
+    <h5><a name="Docentes"></a> Lecturers </h5>
+    <ul>
+        <li><a href="http://www.di.uminho.pt/~lsb">Luís Soares Barbosa</a>
+        <li>
+            <a href="https://scholar.google.com/citations?user=vQ8Sm1MAAAAJ&hl=en">André Sequeira</a>
+        </li>
+    </ul>
+
+    <h5><a name="Avaliação"></a> Assessment </h5>
+
+    <ul>
+           <li> Individual assignment on programming quantum algorithms, 
+            with written report and oral defense (60%) - <a href="TP2425/project_QC_2425.pdf">Assignment</a>
+            <!--
+            <p style="color:red;"><a href="LectureNotesTP/final_project_qc23.pdf"
+              target="_blank" ref="noopener noreferrer">(Project)</a>
+              </p>
+              <p style="color:red;"> <b> Oral Discussion: 16th January 2024, 15h, DI(7) 0.04</b>
+              <table style="width:25%">
+                <tr>
+                  <td><strong>Group</strong></td>
+                  <td><strong>Schedule</strong></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>15:00</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>15:20</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>15:40</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>16:10</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>16:30</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>16:50</td>
+                </tr>
+              </table>
+              <br>
+
+                
+          </li>
+-->
+        <li>
+            Individual written test (40%)
+            <!--: <p style="color:red;"> <b> 18th January 2024, 15.30h, room DI 0.04</b>
+            
+            </li>
+            
+
+            <li> Results <a href="./qc2324_classificacoes.pdf">(Training Assignment + Test)</a>
+              </li>
+            <li> Exam: <p style="color:red;"> <b> 25 January, 9h, Building 2, Room 1.12 </b> </li>
+              <li> Results <a href="./qc2324_classificacoesFINAIS.pdf">(Training Assignment + Test or Exam)</a>
+              </li>
+            <ul>
+             li>
+            <strong>Problem 1 (16-30 March)</strong>
+            <a href="CQ-P1-2021.pdf">(pdf)</a> 
+            </li>
+            <li>
+            <strong>Problem 2 (6-27 May)</strong>
+            <a href="CQ-P2-2021.pdf">(pdf)</a> 
+            </li>
+            <strong>Problem Extra </strong>
+            <a href="CQ-P3-2021.pdf">(pdf)</a> 
+            </li>
+                -->
+        </ul>
+    </ul><!-- <a href="QC-Teste1819.pdf">Results!</a>
+            </li>
+            <li> FINAL MARKS available <a href="CQ-ClassifFinais.pdf">HERE!</a>
+            </li>
+            -->
+    </ul>
+
+
+    <h5><a name="Contact"></a> Contact </h5>
+
+    <ul>
+        <li> Appointments - Luis: Wed, 18:00-20:00 and Fri, 18:00-20:00 (please send an email the day before)
+        <li> Appointments - Andre: Thu, 16:00-18:00 and Fri, 14:00-16:00 (please send an email the day before)
+        <li> Email: lsb at di dot uminho dot pt (Luis) and andresequeira401 at gmail dot com (André)
+        <li> Last update: 2024.11.20
+    </ul>
+
+    <!--~~~~~~~~~~~~~~~~~~~~~~~-->
+</div> <!-- bs-component -->
+</div> <!-- container -->
+
+<!-- FOOTERS -->
+
+<div class="panel-footer" id="wrapper-footer">
+<div id="footer">
+2024.11.20
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="extra/js/bootstrap.min.js"></script>
+<!-- <script src="../assets/js/bootswatch.js"></script> -->
+
+<script>
+
+  $(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+        $(this).collapse('hide');
+    }
+  });
+  
+  // post-process the tweeter feed.
+  (function ($) {
+    window.setTimeout(function(){
+      $(".twitter-timeline").contents().find(".e-entry-title").attr("style", "color: #666666; font-family: 'Roboto','Helvetica Neue',Helvetica,Arial,sans-serif;");
+    }, 1000);
+
+  })(jQuery);
+
+</script>
+
+</body>
+</html>
+
