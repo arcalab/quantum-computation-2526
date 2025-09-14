@@ -7,7 +7,7 @@
 
 	<title>Quantum Computation 2025/26</title>		
 
-	<meta name="description" content="Quantum Computing 25/26">
+	<meta name="description" content="Quantum Computing 23/24">
 	<meta name="keywords" content="Quantum computing, semantics, logic">
 	<meta name="author" content="Luís Soares Barbosa" >
 	
@@ -77,7 +77,9 @@ On successful completion  of the course students should be able
   <li> 
  To master the quantum computational model.
  <li>
-  To  design, analyse and implement quantum algorithms.
+  To  design and analyse quantum algorithms.
+  <li>
+  To implement and run quantum algorithms in the Qiskit software development kit.
 </ul>
 </p>
 
@@ -90,43 +92,41 @@ On successful completion  of the course students should be able
 <ul>
 <li> <strong> Computability and  complexity </strong>
 <ul>
-  <li> Problems and algorithms. 
+  <li> Mathematical backgound: sets, orders, groups. 
   <li> Turing machines and computability. 
-  <li> Computational complexity.
+  <li> Computational complexity. Algorithms and complexity classes. 
 </ul> 
 <li> <strong> Quantum computation and algorithms</strong>
 <ul>
-  <li> The quantum computational model.
+  <li> The quantum computational model (gates, measurements, and circuits).
   <li> Introduction to quantum algorithms.
   <li> Algorithms based on phase amplification.
   <li> Algorithms based on the quantum Fourier transform.
   <li> Case studies in quantum algorithmics.
 </ul> 
-<!--<li>
+<li>
     <strong> Quantum  programming</strong>
     <ul>
         <li> Quantum programming in Qiskit and other tools
     </ul>
-    -->
 </ul>
 
 
 
     <!--~~~~~~~~~~~~~~~~~~~~~~~-->
     <div id="material"></div>
-    <h2>Summaries (2025-26)</h2>
+    <h2>Summaries (2024-25)</h2>
 
     <h5> T Lectures</h5>
 
   <table style="width:100%">
         <tr>
-          <td><strong>Sep 15 (17:00 - 19:00)</strong></td>
+          <td><strong>Sep 11 (09:00 - 11:00)</strong></td>
           <td>Introduction to Quantum Computation and the course dynamics
-            <a href="./2526/CQ2526-0.pdf">(slides)</a>
-            <P> Revisiting computability and computational complexity
-            <a href="./2526/QC-LN-RevisitingComputability-1.pdf">(notes)</a>.</td>
+            <a href="./NotesSlides/CQ-0.pdf">(slides)</a>
+            <P> Mathematical background for the study of computability and computational complexity
+            <a href="./NotesSlides/QC-LN-BackgroundToComputability.pdf">(notes)</a>.</td>
         </tr>
-         <!--
         <tr>
           <td><strong>Sep 16 (11:00 - 13:00)</strong></td>
           <td>Introduction to quantum algorithms. The Deutsch problem
@@ -174,7 +174,7 @@ On successful completion  of the course students should be able
           <td>Shor's algoritm <a href="./NotesSlides/CQ2425-9.pdf">(slides)</a>. 
         </td>
         </tr>
-       
+        <!--
         <tr>
           <td><strong>Sep 27 (09:00 - 11:00)</strong></td>
           <td>Computability. The halting problem. Turing machines.
@@ -262,13 +262,7 @@ quantum computer"</em> (<a href="https://www.cs.princeton.edu/courses/archive/fa
   <table style="width:100%">
 
     <tr>
-      <td><strong>Sep 17 (09:00 - 11:00)</strong></td>
-      <td>Diagnostic exercise.</td>
-    </tr>
-     </table>
-    <!--
-    <tr>
-      <td><strong>Sep 17 (09:00 - 11:00)</strong></td>
+      <td><strong>Sep 30 (16:00 - 18:00)</strong></td>
       <td>Quantum computing introduction with pennylane (<a href="TP2425/TP1-intro/Archive.zip"
           target="_blank" rel="noopener noreferrer">Notebook</a>)</td>
     </tr>
@@ -310,7 +304,7 @@ quantum computer"</em> (<a href="https://www.cs.princeton.edu/courses/archive/fa
         target="_blank" rel="noopener noreferrer">Notebook</a>)</td>
     </tr>
     </table>
-   
+    <!--
     <table style="width:100%">
         <tr>
           <td><strong>Sep 13 (09:00 - 11:00)</strong></td>
@@ -418,13 +412,12 @@ quantum computer"</em> (<a href="https://www.cs.princeton.edu/courses/archive/fa
             M. A. Nielsen and I. L. Chuang. <strong>Quantum Computation and Quantum Information</strong> (10th
             Anniversary Edition). Cambridge University Press, 2010
         <li>
-            N. S. Yanofsky and M. A. Mannucci. <strong>Quantum Computing for Computer Scientists</strong>. Cambridge
-            University Press, 2008.
-        <li>
             E. Rieffel and W. Polak. <strong>Quantum Computing: A Gentle Introduction</strong>. MIT Press, 2011.
         <li>
-            A. M. Dalzell, S. Mcardle, et al. <strong>Quantum Algorithms</strong>. Cambridge
-            University Press, 2025.
+            F. Kaye, R. Laflamme and M. Mosca. <strong>An Introduction to Quantum Computing</strong>. Oxford University Press, 2007.
+        <li>
+            N. S. Yanofsky and M. A. Mannucci. <strong>Quantum Computing for Computer Scientists</strong>. Cambridge
+            University Press, 2008.
         <li>
             W. Scherer. <strong>Mathematics of Quantum Computing</strong>. Springer, 2019.
     </ul>
@@ -453,7 +446,7 @@ quantum computer"</em> (<a href="https://www.cs.princeton.edu/courses/archive/fa
 
 
 
-    <h5> Other (useful) readings </h5>
+    <h5> Bedtime readings </h5>
     <ul>
 
         <li>
@@ -470,14 +463,14 @@ quantum computer"</em> (<a href="https://www.cs.princeton.edu/courses/archive/fa
 
     <h5> Links </h5>
     <ul>
-        <li><a href="https://pennylane.ai/">Quantum Programming in PennyLane</a></li>
-        <li><a href="https://inl.int/galvao-research-group/">Quantum and Linear Optical Computation Group at INL</a></li>
-        <li><a href="https://www.inesctec.pt/en/centres/haslab">HASLab - High Assurance Software Lab at INESCT TEC</a></li>
+        <li><a href="https://complexityzoo.net/Complexity_Zoo">The complexity zoo</a></li>
+        <li><a href="http://quantumalgorithmzoo.org/">Quantum Algorithms zoo</a></li>
+        <li><a href="https://quantum-computing.ibm.com/composer">IBM Quantum Experience</a></li>
+        <li><a href="https://inl.int/research-groups/quantum-and-linear-optical-computation/">Quantum and Linear Optical Computation Group at INL</a></li>
+        <li><a href="http://lmf.di.uminho.pt/">Logic and Formal Methods Group</a></li>
     </ul>
 
     <!--
-              <li><a href="https://complexityzoo.net/Complexity_Zoo">The complexity zoo</a></li>
-        <li><a href="http://quantumalgorithmzoo.org/">Quantum Algorithms zoo</a></li>
     <div id="notas"></div>
     <h2>News</h2>
 
@@ -539,16 +532,17 @@ quantum computer"</em> (<a href="https://www.cs.princeton.edu/courses/archive/fa
     <h5><a name="Docentes"></a> Lecturers </h5>
     <ul>
         <li><a href="http://www.di.uminho.pt/~lsb">Luís Soares Barbosa</a>
+        <li>
+            <a href="https://scholar.google.com/citations?user=vQ8Sm1MAAAAJ&hl=en">André Sequeira</a>
         </li>
     </ul>
 
     <h5><a name="Avaliação"></a> Assessment </h5>
 
     <ul>
-           <li> Individual assignment on  quantum algorithms, 
-            with written report and oral defense (40%)
+           <li> Individual assignment on programming quantum algorithms, 
+            with written report and oral defense (60%) - <a href="TP2425/project_QC_2425.pdf">Assignment</a>
             <!--
-              with written report and oral defense (60%) - <a href="TP2425/project_QC_2425.pdf">Assignment</a>
             <p style="color:red;"><a href="LectureNotesTP/final_project_qc23.pdf"
               target="_blank" ref="noopener noreferrer">(Project)</a>
               </p>
@@ -589,7 +583,7 @@ quantum computer"</em> (<a href="https://www.cs.princeton.edu/courses/archive/fa
           </li>
 -->
         <li>
-            Individual written test (60%)
+            Individual written test (40%)
             <!--: <p style="color:red;"> <b> 18th January 2024, 15.30h, room DI 0.04</b>
             
             </li>
@@ -625,9 +619,10 @@ quantum computer"</em> (<a href="https://www.cs.princeton.edu/courses/archive/fa
     <h5><a name="Contact"></a> Contact </h5>
 
     <ul>
-        <li> Appointments -  Wed, 18:00-20:00 and Fri, 18:00-20:00 (please send an email the day before)
-        <li> Email: lsb at di dot uminho dot pt 
-        <li> Last update: 2025.09.14
+        <li> Appointments - Luis: Wed, 18:00-20:00 and Fri, 18:00-20:00 (please send an email the day before)
+        <li> Appointments - Andre: Thu, 16:00-18:00 and Fri, 14:00-16:00 (please send an email the day before)
+        <li> Email: lsb at di dot uminho dot pt (Luis) and andresequeira401 at gmail dot com (André)
+        <li> Last update: 2024.11.20
     </ul>
 
     <!--~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -638,7 +633,7 @@ quantum computer"</em> (<a href="https://www.cs.princeton.edu/courses/archive/fa
 
 <div class="panel-footer" id="wrapper-footer">
 <div id="footer">
-2025.09.14
+2024.11.20
 </div>
 </div>
 
